@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acesso Restrito</title>
+  <link rel="stylesheet" href="styles-pages/sobre.css">
+</head>
+
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loading">
+    <div class="loader-box">
+      <div class="loader-icon">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z" />
+        </svg>
+      </div>
+      <div class="loader-title">Conectando ao canal privado</div>
+      <div class="loader-sub" id="loaderStatus">Estabelecendo conexão segura...</div>
+      <div class="loader-bar-track">
+        <div class="loader-bar-fill"></div>
+      </div>
+      <div class="loader-percent">
+        <span>criptografia ponta-a-ponta</span>
+        <span id="percentText">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="bg-grid"></div>
+  <div class="glow-red"></div>
+  <div class="glow-blue"></div>
+  <div class="glow-pink"></div>
+
+  <div id="content">
+    <div class="wrap">
+
+      <!-- HERO -->
+      <div class="eyebrow">Acesso liberado</div>
+      <h1 class="hero-title">Bem-Vindo(a), Eu sou<br><span class="accent">João Gabriel</span> ⚡🕷️</h1>
+      <p class="hero-sub">
+        19 anos rodando. Esse "canal vip" era só uma desculpa pra te trazer até aqui —
+        na verdade é um lugar feito sob medida pra saber mais sobre mim: dev em formação,
+        fã de herói, viciado em música eletrônica e café forte o suficiente pra debugar qualquer coisa.
+      </p>
+
+      <div class="badge-row">
+        <span class="badge"><span class="dot" style="background:var(--flash-yellow)"></span>JavaScript</span>
+        <span class="badge"><span class="dot" style="background:var(--flash-red)"></span>The Flash</span>
+        <span class="badge"><span class="dot" style="background:var(--spidey-blue)"></span>Homem-Aranha</span>
+        <span class="badge"><span class="dot" style="background:var(--neon)"></span>Música eletrônica</span>
+        <span class="badge"><span class="dot" style="background:#caa472"></span>Café</span>
+        <span class="badge"><span class="dot" style="background:var(--weeknd-pink)"></span>The Weeknd</span>
+      </div>
+
+      <!-- TERMINAL / CODE -->
+      <div class="section">
+        <div class="section-label">profile.js</div>
+        <div class="terminal">
+          <div class="terminal-head">
+            <div class="terminal-dot" style="background:#ff5f57"></div>
+            <div class="terminal-dot" style="background:#febc2e"></div>
+            <div class="terminal-dot" style="background:#28c840"></div>
+            <div class="terminal-name">~/joaogabriel/birthday.js</div>
+          </div>
+          <div class="terminal-body">
+            <span class="tk-key">const</span> <span class="tk-fn">joaoGabriel</span> <span class="tk-punc">=</span>
+            <span class="tk-punc">{</span><br>
+            &nbsp;&nbsp;<span class="tk-prop">idade</span><span class="tk-punc">:</span> <span
+              class="tk-num">19</span><span class="tk-punc">,</span> <span class="tk-com">// hoje atualizou pra essa
+              versão</span><br>
+            &nbsp;&nbsp;<span class="tk-prop">stack</span><span class="tk-punc">:</span> <span
+              class="tk-punc">[</span><span class="tk-str">"JavaScript"</span><span class="tk-punc">,</span> <span
+              class="tk-str">"curiosidade"</span><span class="tk-punc">,</span> <span class="tk-str">"café"</span><span
+              class="tk-punc">]</span><span class="tk-punc">,</span><br>
+            &nbsp;&nbsp;<span class="tk-prop">heroi</span><span class="tk-punc">:</span> <span
+              class="tk-str">"Homem-Aranha"</span><span class="tk-punc">,</span><br>
+            &nbsp;&nbsp;<span class="tk-prop">serie</span><span class="tk-punc">:</span> <span class="tk-str">"The
+              Flash"</span><span class="tk-punc">,</span><br>
+            &nbsp;&nbsp;<span class="tk-prop">trilhaSonora</span><span class="tk-punc">:</span> <span
+              class="tk-str">"The Weeknd"</span><span class="tk-punc">,</span><br>
+            &nbsp;&nbsp;<span class="tk-prop">poderes</span><span class="tk-punc">:</span> <span
+              class="tk-punc">[</span><span class="tk-str">"escrever código rápido"</span><span class="tk-punc">,</span>
+            <span class="tk-str">"sobreviver com pouco sono"</span><span class="tk-punc">]</span><span
+              class="tk-punc">,</span><br>
+            &nbsp;&nbsp;<span class="tk-prop">status</span><span class="tk-punc">:</span> <span
+              class="tk-str">"compilando uma nova versão de si mesmo"</span><br>
+            <span class="tk-punc">}</span><span class="tk-punc">;</span><br><br>
+            <span class="tk-fn">console</span><span class="tk-punc">.</span><span class="tk-fn">log</span><span
+              class="tk-punc">(</span><span class="tk-str">`Parabéns, ${joaoGabriel.stack[0]} master! 🎉`</span><span
+              class="tk-punc">)</span><span class="tk-punc">;</span>
+            <span class="cursor"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- INTERESTS GRID -->
+      <div class="section">
+        <div class="section-label">sobre mim</div>
+        <div class="grid">
+          <div class="card">
+            <span class="card-icon">⚡</span>
+            <div class="card-title">Velocidade do Flash</div>
+            <div class="card-desc">Correndo atrás dos seus objetivos mais rápido que o Barry Allen corre de volta para a Íris West.</div>
+          </div>
+          <div class="card">
+            <span class="card-icon">🕷️</span>
+            <div class="card-title">Reflexos de Aranha</div>
+            <div class="card-desc">Sempre pronto pra resolver bug, sentindo o "perigo" antes mesmo do erro aparecer no
+              console.</div>
+          </div>
+          <div class="card">
+            <span class="card-icon">🎧</span>
+            <div class="card-title">Trilha eletrônica</div>
+            <div class="card-desc">Beats eletrônicos no fone enquanto o código compila — produtividade no modo
+              synthwave.</div>
+          </div>
+          <div class="card">
+            <span class="card-icon">☕</span>
+            <div class="card-title">Café no sangue</div>
+            <div class="card-desc">Combustível oficial de quem programa até tarde e acorda cedo pra estudar mais.</div>
+          </div>
+          <div class="card">
+            <span class="card-icon">🌙</span>
+            <div class="card-title">The Weeknd</div>
+            <div class="card-desc">Trilha sonora certa pra cada vibe: foco, festa ou madrugada de código.</div>
+          </div>
+          <div class="card">
+            <span class="card-icon">💻</span>
+            <div class="card-title">Dev em construção</div>
+            <div class="card-desc">19 anos e já construindo seu caminho como desenvolvedor — esse é só o começo.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GALLERY -->
+      <div class="section">
+        <div class="section-label">After Hours Til Dawn</div>
+        <div class="gallery">
+          <a href="img-sobre/show1.jpg" target="_blank" class="wide">
+            <img src="img-sobre/show1.jpg" alt="Fogos de artifício no show do The Weeknd">
+          </a>
+          <a href="img-sobre/show3.jpg" target="_blank">
+            <img src="img-sobre/show3.jpg" alt="Performance no palco do The Weeknd">
+          </a>
+          <a href="img-sobre/show4.jpg" target="_blank">
+            <img src="img-sobre/show4.jpg" alt="Robô luminoso no palco do The Weeknd">
+          </a>
+          <a href="img-sobre/show2.jpg" target="_blank" class="wide">
+            <img src="img-sobre/show2.jpg" alt="Ingresso do The Weeknd After Hours Til Dawn Tour">
+          </a>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <!--
+      <div class="footer">
+        <div class="footer-msg">
+          Parabéns, <span class="hl">João</span> <span class="hl2">Gabriel</span>! 🎂
+        </div>
+      -->
+        <div class="footer">
+          <div class="footer-msg">
+            Sobre esse <span class="hl">Ano</span> <span class="hl2">2026</span>
+          </div>
+        </div>
+        <div class="footer-sub">
+          Que esse novo ano venha cheio de código limpo, café quente, shows incríveis e muitas conquistas.
+        </div>
+        <div class="signature">feito com JS, café e carinho</div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const statuses = [
+      "Estabelecendo conexão segura...",
+      "Verificando convite...",
+      "Sincronizando mídia...",
+      "Carregando canal...",
+      "Quase lá..."
+    ];
+
+    const statusEl = document.getElementById('loaderStatus');
+    const percentEl = document.getElementById('percentText');
+    let i = 0;
+
+    const statusInterval = setInterval(() => {
+      i = (i + 1) % statuses.length;
+      statusEl.textContent = statuses[i];
+    }, 700);
+
+    // animate percent roughly matching the bar timing (3.4s)
+    let pct = 0;
+    const percentInterval = setInterval(() => {
+      pct += Math.floor(Math.random() * 9) + 3;
+      if (pct >= 100) pct = 100;
+      percentEl.textContent = pct + "%";
+      if (pct >= 100) clearInterval(percentInterval);
+    }, 280);
+
+    setTimeout(() => {
+      clearInterval(statusInterval);
+      const loading = document.getElementById('loading');
+      const content = document.getElementById('content');
+      loading.classList.add('hide');
+      content.classList.add('show');
+      setTimeout(() => loading.remove(), 900);
+    }, 3600);
+  </script>
+
+</body>
+
+</html>
