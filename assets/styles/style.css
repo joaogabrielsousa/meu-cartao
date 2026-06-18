@@ -54,7 +54,7 @@ header{
 .text-perfil p{
     font-size: 18px;
     color: #ffffff;
-    width: 75%;
+    width: 50vw;
     text-align: center;
 }
 .social-medias{
@@ -142,6 +142,12 @@ header{
 /*
 Contener Sobre 
 */
+.comunication-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .more-about{
     display: flex;
     justify-content: center;
