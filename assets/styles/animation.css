@@ -1,0 +1,8 @@
+@keyframes border-rotation{
+    0%{
+        border: 2px solid var(--vermelho);
+    }
+    100%{
+        border: 2px solid var(--azul-claro);
+    }
+}

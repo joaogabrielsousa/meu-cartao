@@ -1,0 +1,22 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="chevronGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E63950"/>
+      <stop offset="100%" stop-color="#2451E0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- fundo -->
+  <rect width="240" height="240" rx="48" fill="#11131A"/>
+
+  <!-- chevron ">" desenhado como traço grosso -->
+  <polyline points="78,58 152,120 78,182"
+            fill="none"
+            stroke="url(#chevronGrad)"
+            stroke-width="26"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+
+  <!-- cursor do terminal -->
+  <rect x="168" y="108" width="42" height="24" rx="7" fill="#2451E0"/>
+</svg>

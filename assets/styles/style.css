@@ -1,4 +1,5 @@
 @import url(reset.css);
+@import url(animation.css);
 
 :root{
     --azul-escuro: #0D1B2A;
@@ -16,11 +17,46 @@ header
 header{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
     padding: 20px;
+
+    height: 45px;
+    border-bottom: 1px solid var(--azul-claro);
 }
+.logo a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    height: 50px;
+}
+.picture-logo img{
+    width: 40px;
+}
+/*   menu  */
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    list-style: none;
+}
+.nav-list li:hover,
+.nav-list a:hover{
+    scale: 1.1;
+    transform: translateY(-5px);
+    color: var(--vermelho);
+    transition: all 0.3s ease;
+}
+/*
+MAIN
+*/
 .picture-perfil{
     display:flex;
     justify-content: center;
@@ -32,6 +68,7 @@ header{
     border: 3px solid #000;
 
     margin: 20px;
+    animation: border-rotation 2s linear alternate infinite;
 }
 .text-perfil{
     display:flex;
@@ -111,6 +148,8 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    padding-bottom: 20px;
 }
 .comunication-container{
     display: flex;
