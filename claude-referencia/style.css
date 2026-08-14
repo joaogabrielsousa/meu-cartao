@@ -1,0 +1,255 @@
+:root {
+  --azul-escuro: #0D1B2A;
+  --azul: #1E3A8A;
+  --azul-claro: #2563EB;
+  --vermelho: #EF4444;
+  --cinza: #F5F7FA;
+  --branco: #FFFFFF;
+  --raio: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--cinza);
+  color: var(--azul-escuro);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: var(--azul-escuro);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--branco);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.logo-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--azul-claro), var(--vermelho));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--branco);
+  font-size: 1rem;
+}
+
+nav.main-nav ul {
+  display: flex;
+  gap: 32px;
+}
+
+nav.main-nav a {
+  color: var(--branco);
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+nav.main-nav a:hover {
+  color: var(--vermelho);
+}
+
+nav.main-nav a.ativo {
+  color: var(--vermelho);
+  border-color: var(--vermelho);
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--branco);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--azul-escuro);
+  padding: 24px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.menu-mobile.aberto {
+  display: flex;
+}
+
+.menu-mobile a {
+  color: var(--branco);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.menu-mobile a.ativo {
+  color: var(--vermelho);
+}
+
+@media (max-width: 720px) {
+  nav.main-nav {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+}
+
+/* ===== BOTÕES ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 24px;
+  border-radius: var(--raio);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primario {
+  background: var(--vermelho);
+  color: var(--branco);
+}
+
+.btn-secundario {
+  background: transparent;
+  color: var(--branco);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-secundario:hover {
+  border-color: var(--branco);
+}
+
+/* ===== ÍCONES SOCIAIS ===== */
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--branco);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.social-icons a:hover {
+  background: var(--azul-claro);
+  transform: translateY(-3px);
+}
+
+/* ===== HERO INTERNO (topo de cada página) ===== */
+.pagina-hero {
+  background: var(--azul-escuro);
+  color: var(--branco);
+  padding: 64px 0 56px;
+  text-align: center;
+}
+
+.pagina-hero h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.pagina-hero .eyebrow {
+  color: var(--vermelho);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: lowercase;
+  margin-top: 6px;
+  display: block;
+}
+
+/* ===== SEÇÃO GERAL ===== */
+section {
+  padding: 64px 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--azul-escuro);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 40px 24px;
+  text-align: center;
+}
+
+footer .logo {
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+footer .social-icons {
+  justify-content: center;
+  margin: 16px 0;
+}
+
+footer p {
+  font-size: 0.85rem;
+}

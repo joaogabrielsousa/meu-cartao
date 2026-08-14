@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços | Seu Nome - Desenvolvedor Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
+        SeuNome
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="servicos.html" class="ativo">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="menu-btn" id="menu-btn"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div class="menu-mobile" id="menu-mobile">
+      <a href="index.html">Home</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="servicos.html" class="ativo">Serviços</a>
+      <a href="contato.html">Contato</a>
+    </div>
+  </header>
+
+  <section class="pagina-hero">
+    <div class="container">
+      <h1>Serviços</h1>
+      <span class="eyebrow">o que eu faço</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:24px;">
+
+        <div
+          style="background:var(--branco); border-radius:var(--raio); padding:32px; box-shadow:0 4px 20px rgba(13,27,42,0.08);">
+          <div
+            style="width:52px; height:52px; border-radius:12px; background:var(--azul-escuro); color:#fff; display:flex; align-items:center; justify-content:center; font-size:1.3rem; margin-bottom:20px;">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3 style="margin-bottom:10px;">Desenvolvimento Web</h3>
+          <p style="color:#5B6B7B;">Criação de sites e sistemas modernos e responsivos.</p>
+        </div>
+
+        <div
+          style="background:var(--branco); border-radius:var(--raio); padding:32px; box-shadow:0 4px 20px rgba(13,27,42,0.08);">
+          <div
+            style="width:52px; height:52px; border-radius:12px; background:var(--azul-escuro); color:#fff; display:flex; align-items:center; justify-content:center; font-size:1.3rem; margin-bottom:20px;">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <h3 style="margin-bottom:10px;">Landing Pages</h3>
+          <p style="color:#5B6B7B;">Páginas de alta conversão para seu negócio.</p>
+        </div>
+
+        <div
+          style="background:var(--branco); border-radius:var(--raio); padding:32px; box-shadow:0 4px 20px rgba(13,27,42,0.08);">
+          <div
+            style="width:52px; height:52px; border-radius:12px; background:var(--azul-escuro); color:#fff; display:flex; align-items:center; justify-content:center; font-size:1.3rem; margin-bottom:20px;">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <h3 style="margin-bottom:10px;">Manutenção</h3>
+          <p style="color:#5B6B7B;">Manutenção e atualização de sites existentes.</p>
+        </div>
+
+      </div>
+
+      <div style="text-align:center; margin-top:48px;">
+        <a href="contato.html" class="btn btn-primario" style="color:#fff;">
+          Solicitar orçamento <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <a href="index.html" class="logo">
+      <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
+      SeuNome
+    </a>
+    <div class="social-icons">
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="#" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
