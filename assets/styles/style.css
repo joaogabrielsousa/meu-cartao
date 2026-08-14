@@ -38,6 +38,31 @@ header{
     width: 40px;
 }
 /*   menu  */
+.menu-img{
+    display: none;
+}
+.svg-menu{
+    width: 30px;
+    height: 30px;
+
+    transition: all .7s ease;
+}
+.svg-menu:hover{
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+.svg-menu:active{
+    animation: menuActivation .5s infinite;
+}
+.path1-menu{
+    animation: menuAction 2.5s infinite alternate ;
+}
+.path2-menu{
+    animation: menuAction 2.5s 1.5s infinite alternate ;
+}
+.path3-menu{
+    animation: menuAction 2.5s 2.5s infinite alternate ;
+}
 .nav-list{
     display: flex;
     flex-direction: row;
@@ -128,20 +153,6 @@ MAIN
 }
 .picture-social:active{
     animation: click 1s ease;
-}
-@keyframes click {
-    0% {
-        scale: 1;
-        transform: rotate(0deg);
-    }
-    50% {
-        scale: 1.2;
-        transform: rotate(180deg);
-    }
-    100% {
-        scale: 1;
-        transform: rotate(360deg);
-    }
 }
 .contact{
     display: flex;

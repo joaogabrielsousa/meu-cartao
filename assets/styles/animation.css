@@ -1,3 +1,35 @@
+@keyframes menuAction {
+    0%{
+        color: #ffffff;
+        fill: #ffffff;
+        stroke: #ffffff;
+    }
+    50%{
+        color: #ff0000;
+        fill: #ff0000;
+        stroke: #ff0000;
+    }
+    100%{
+        color: #0000ff;
+        fill: #0000ff;
+        stroke: #0000ff;
+    }
+}
+
+@keyframes menuActivation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/*
+Main
+*/
 @keyframes border-rotation{
     0%{
         border: 2px solid var(--vermelho);
@@ -5,4 +37,33 @@
     100%{
         border: 2px solid var(--azul-claro);
     }
+}
+
+@keyframes click {
+    0% {
+        scale: 1;
+        transform: rotate(0deg);
+    }
+    50% {
+        scale: 1.2;
+        transform: rotate(180deg);
+    }
+    100% {
+        scale: 1;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes clickMenu {
+    0%{transform: rotate(20deg);}
+    10%{transform: rotate(40deg);}
+    20%{transform: rotate(60deg);}
+    30%{transform: rotate(80deg);}
+    35%{transform: rotate(90deg);}
+    40%{transform: translateY(-2px);}
+    50%{transform: translateY(-4px);}
+    60%{transform: translateY(-2px);}
+    70%{transform: translateY(0);}
+    80%{display: none;}
+    100%{display:none;}
 }

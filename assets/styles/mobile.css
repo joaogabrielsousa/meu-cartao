@@ -16,6 +16,16 @@ header{
 .picture-logo img{
     width: 40px;
 }
+/*
+MENU
+*/
+.menu-img{
+    display: block;
+    transition: all .5s ease;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    
+}
 .nav{
     display: none;
 }
