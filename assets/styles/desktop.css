@@ -66,10 +66,10 @@ header {
 }
 
 /*   menu  */
-.menu-invisible {
+.menu-close {
     display: none;
 }
-.menu-visible{
+.menu-open{
     display: block;
 }
 
