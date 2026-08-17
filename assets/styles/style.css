@@ -35,19 +35,30 @@ a{
 
 /*---------- HEADER -----------*/
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
-    padding: 30px 20px;
+    padding: 20px;
+    height: 75px;
 
-    height: 45px;
     border-bottom: 1px solid var(--azul-claro);
 
-    overflow: hidden;
+}
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 1fr;
 }
 
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 .logo a {
     display: flex;
     flex-direction: row;
@@ -73,9 +84,12 @@ header {
     display: block;
 }
 
+.svg-container{
+    align-self: flex-end;
+}
 .svg-menu {
     width: 30px;
-    height: 30px;
+    height: 30px;    
 
     transition: all .7s ease;
 }
@@ -100,12 +114,22 @@ header {
 .path3-menu {
     animation: menuAction 2.5s 2.5s infinite alternate;
 }
+/* nav */
 
+.nav{
+    display: none;
+
+    background-color: var(--azul-escuro);
+    border-top: 1px solid var(--azul);
+}
+.nav-visible{
+    display: block;
+}
 .nav-list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: 20px;
 
     list-style: none;
